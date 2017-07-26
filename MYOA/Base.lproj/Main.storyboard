@@ -50,10 +50,10 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="sS6-8a-aVW">
-                                <rect key="frame" x="16" y="84" width="288" height="302"/>
+                                <rect key="frame" x="16" y="64" width="288" height="322"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="302" id="Sbd-Ub-mYZ"/>
+                                    <constraint firstAttribute="height" constant="322" id="Sbd-Ub-mYZ"/>
                                 </constraints>
                                 <string key="text">North Korea leader Kim Jong-Un has stated that he will be testing an inter-continental ballistic missile with a nuclear warhead by exploding it in the air over the eastern Pacific ocean.</string>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
@@ -77,7 +77,7 @@
                             <constraint firstItem="yOb-gC-MYA" firstAttribute="top" secondItem="jrK-7d-bOd" secondAttribute="bottom" constant="34" id="eFv-MD-hG8"/>
                             <constraint firstItem="sS6-8a-aVW" firstAttribute="leading" secondItem="jrK-7d-bOd" secondAttribute="leading" id="flJ-aK-xg4"/>
                             <constraint firstItem="yOb-gC-MYA" firstAttribute="trailing" secondItem="jrK-7d-bOd" secondAttribute="trailing" id="hm9-2O-Jbc"/>
-                            <constraint firstItem="sS6-8a-aVW" firstAttribute="top" secondItem="Hlx-p4-Bki" secondAttribute="bottom" constant="20" id="jtU-7y-wzH"/>
+                            <constraint firstItem="sS6-8a-aVW" firstAttribute="top" secondItem="Hlx-p4-Bki" secondAttribute="bottom" id="jtU-7y-wzH"/>
                             <constraint firstItem="sS6-8a-aVW" firstAttribute="leading" secondItem="O3t-P0-8vi" secondAttribute="leadingMargin" id="tmm-wB-kD5"/>
                             <constraint firstItem="jrK-7d-bOd" firstAttribute="top" secondItem="sS6-8a-aVW" secondAttribute="bottom" constant="35" id="uKN-wr-H46"/>
                         </constraints>
@@ -104,6 +104,9 @@
                                 <rect key="frame" x="16" y="421" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Attempt an intercept with Patriot missiles"/>
+                                <connections>
+                                    <segue destination="CZf-M9-ffm" kind="show" id="Ehr-k8-2CG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxz-Yd-yyw">
                                 <rect key="frame" x="16" y="485" width="288" height="30"/>
@@ -112,12 +115,15 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Nuke Pyongyang"/>
+                                <connections>
+                                    <segue destination="qhO-ev-fGZ" kind="show" id="lsI-p1-5Df"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tKj-Af-f97">
-                                <rect key="frame" x="16" y="84" width="288" height="302"/>
+                                <rect key="frame" x="16" y="64" width="288" height="322"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="302" id="MD5-mH-Svd"/>
+                                    <constraint firstAttribute="height" constant="322" id="MD5-mH-Svd"/>
                                 </constraints>
                                 <string key="text">The North Korean leader's radar identified your incoming warplanes and has launched the ICBM with a declared target of San Francisco!</string>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
@@ -134,7 +140,7 @@
                             <constraint firstItem="tKj-Af-f97" firstAttribute="trailing" secondItem="G3F-Am-zWV" secondAttribute="trailingMargin" id="ehK-qF-Mo0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nxz-Yd-yyw" secondAttribute="trailing" id="mye-Ux-mHy"/>
                             <constraint firstItem="nxz-Yd-yyw" firstAttribute="top" secondItem="8VZ-SI-hqK" secondAttribute="bottom" constant="34" id="oP9-BT-zSg"/>
-                            <constraint firstItem="tKj-Af-f97" firstAttribute="top" secondItem="pa8-LQ-DTo" secondAttribute="bottom" constant="20" id="x9q-Ae-aQu"/>
+                            <constraint firstItem="tKj-Af-f97" firstAttribute="top" secondItem="pa8-LQ-DTo" secondAttribute="bottom" id="x9q-Ae-aQu"/>
                             <constraint firstItem="gQC-gS-mJj" firstAttribute="top" secondItem="nxz-Yd-yyw" secondAttribute="bottom" constant="53" id="xpW-GB-Xc9"/>
                         </constraints>
                     </view>
@@ -160,6 +166,9 @@
                                 <rect key="frame" x="16" y="421" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Launch missile strikes at all known launching facilities"/>
+                                <connections>
+                                    <segue destination="iUv-qh-sZW" kind="show" id="xS2-rg-Tva"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylC-je-k2R">
                                 <rect key="frame" x="16" y="485" width="288" height="30"/>
@@ -168,12 +177,15 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Order a full scale invasion from South Korea"/>
+                                <connections>
+                                    <segue destination="riX-3H-xPT" kind="show" id="MHq-cv-MWJ"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hui-fQ-M7F">
-                                <rect key="frame" x="16" y="84" width="288" height="302"/>
+                                <rect key="frame" x="16" y="64" width="288" height="322"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="302" id="bQT-jV-KS8"/>
+                                    <constraint firstAttribute="height" constant="322" id="bQT-jV-KS8"/>
                                 </constraints>
                                 <string key="text">Large swathes of the country are without power, but intelligence indicates mobile launch vehicles are still moving into position.</string>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
@@ -187,7 +199,7 @@
                             <constraint firstItem="hui-fQ-M7F" firstAttribute="leading" secondItem="Q2C-R0-TS5" secondAttribute="leadingMargin" id="2yq-Dt-rLr"/>
                             <constraint firstItem="hui-fQ-M7F" firstAttribute="trailing" secondItem="Q2C-R0-TS5" secondAttribute="trailingMargin" id="HzJ-0X-WfF"/>
                             <constraint firstItem="hui-fQ-M7F" firstAttribute="trailing" secondItem="ylC-je-k2R" secondAttribute="trailing" id="Qem-81-0Vp"/>
-                            <constraint firstItem="hui-fQ-M7F" firstAttribute="top" secondItem="eb5-7j-zVJ" secondAttribute="bottom" constant="20" id="ety-ed-Jdi"/>
+                            <constraint firstItem="hui-fQ-M7F" firstAttribute="top" secondItem="eb5-7j-zVJ" secondAttribute="bottom" id="ety-ed-Jdi"/>
                             <constraint firstItem="hui-fQ-M7F" firstAttribute="leading" secondItem="ylC-je-k2R" secondAttribute="leading" id="ln4-UW-pDq"/>
                             <constraint firstItem="jKb-YA-YZ2" firstAttribute="top" secondItem="hui-fQ-M7F" secondAttribute="bottom" constant="35" id="onA-Jc-3cU"/>
                             <constraint firstItem="hui-fQ-M7F" firstAttribute="trailing" secondItem="jKb-YA-YZ2" secondAttribute="trailing" id="vpV-4t-9EK"/>
@@ -199,6 +211,189 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2q3-jh-WJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="885" y="490.14084507042253"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qC4-dQ-g0s">
+            <objects>
+                <viewController id="CZf-M9-ffm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7a-Wc-cKx"/>
+                        <viewControllerLayoutGuide type="bottom" id="emd-W2-sgc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NmP-E8-RT7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaO-5a-Fet">
+                                <rect key="frame" x="16" y="421" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Attempt an intercept with Patriot missiles"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc8-pA-cWX">
+                                <rect key="frame" x="16" y="485" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rx2-ri-wRq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Nuke Pyongyang"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="u2m-rS-w89">
+                                <rect key="frame" x="16" y="64" width="288" height="322"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="322" id="Ktp-ds-LtI"/>
+                                </constraints>
+                                <string key="text">Your patriot missile failed to intercept the ICBM! San Francisco has been annhilated. This will not help your reelection chances.</string>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wc8-pA-cWX" secondAttribute="trailing" id="1lN-gK-HXK"/>
+                            <constraint firstItem="u2m-rS-w89" firstAttribute="leading" secondItem="Wc8-pA-cWX" secondAttribute="leading" id="8ih-5j-Nrb"/>
+                            <constraint firstItem="u2m-rS-w89" firstAttribute="leading" secondItem="eaO-5a-Fet" secondAttribute="leading" id="L8g-Z8-tOw"/>
+                            <constraint firstItem="u2m-rS-w89" firstAttribute="trailing" secondItem="NmP-E8-RT7" secondAttribute="trailingMargin" id="PCl-5I-YMl"/>
+                            <constraint firstItem="Wc8-pA-cWX" firstAttribute="top" secondItem="eaO-5a-Fet" secondAttribute="bottom" constant="34" id="PmZ-O4-Psc"/>
+                            <constraint firstItem="eaO-5a-Fet" firstAttribute="top" secondItem="u2m-rS-w89" secondAttribute="bottom" constant="35" id="fs6-eE-Nya"/>
+                            <constraint firstItem="Wc8-pA-cWX" firstAttribute="trailing" secondItem="eaO-5a-Fet" secondAttribute="trailing" id="hBp-zx-iDy"/>
+                            <constraint firstItem="emd-W2-sgc" firstAttribute="top" secondItem="Wc8-pA-cWX" secondAttribute="bottom" constant="53" id="j54-vW-dfl"/>
+                            <constraint firstItem="u2m-rS-w89" firstAttribute="top" secondItem="L7a-Wc-cKx" secondAttribute="bottom" id="kXq-KM-qhC"/>
+                            <constraint firstItem="u2m-rS-w89" firstAttribute="leading" secondItem="NmP-E8-RT7" secondAttribute="leadingMargin" id="vJV-R6-fKU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="I3T-0O-ytP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkm-f3-Eg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852.5" y="-1029.9295774647887"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YHg-vn-Ydq">
+            <objects>
+                <viewController id="qhO-ev-fGZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Ea-1G-181"/>
+                        <viewControllerLayoutGuide type="bottom" id="xDg-OW-inv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8rH-ey-hua">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpd-7y-vLu">
+                                <rect key="frame" x="16" y="421" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Attempt an intercept with Patriot missiles"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTo-bw-JIj">
+                                <rect key="frame" x="16" y="485" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iuk-aQ-2Fr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Nuke Pyongyang"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You have successfully nuked Pyongyang! San Francisco has also been annihilated. So next steps should be fun." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="vXc-JE-kW1">
+                                <rect key="frame" x="16" y="64" width="288" height="278"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="278" id="Dec-rb-1xo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vXc-JE-kW1" firstAttribute="trailing" secondItem="8rH-ey-hua" secondAttribute="trailingMargin" id="3d7-xA-j9I"/>
+                            <constraint firstItem="vXc-JE-kW1" firstAttribute="top" secondItem="2Ea-1G-181" secondAttribute="bottom" id="5q5-tj-aay"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BTo-bw-JIj" secondAttribute="trailing" id="ENl-wj-A3o"/>
+                            <constraint firstItem="vXc-JE-kW1" firstAttribute="leading" secondItem="BTo-bw-JIj" secondAttribute="leading" id="SNl-pB-bHA"/>
+                            <constraint firstItem="BTo-bw-JIj" firstAttribute="trailing" secondItem="cpd-7y-vLu" secondAttribute="trailing" id="TyM-qO-0pc"/>
+                            <constraint firstItem="cpd-7y-vLu" firstAttribute="top" secondItem="vXc-JE-kW1" secondAttribute="bottom" constant="79" id="ZxY-Fd-DsU"/>
+                            <constraint firstItem="BTo-bw-JIj" firstAttribute="top" secondItem="cpd-7y-vLu" secondAttribute="bottom" constant="34" id="hUr-Uj-77p"/>
+                            <constraint firstItem="vXc-JE-kW1" firstAttribute="leading" secondItem="8rH-ey-hua" secondAttribute="leadingMargin" id="noW-jG-ocK"/>
+                            <constraint firstItem="xDg-OW-inv" firstAttribute="top" secondItem="BTo-bw-JIj" secondAttribute="bottom" constant="53" id="tpg-ve-4qF"/>
+                            <constraint firstItem="vXc-JE-kW1" firstAttribute="leading" secondItem="cpd-7y-vLu" secondAttribute="leading" id="zTG-Hi-A9v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IKh-Jz-Obd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEW-KI-eNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852.5" y="-252.46478873239437"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XbE-2G-B2v">
+            <objects>
+                <viewController id="iUv-qh-sZW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vho-2z-nW6"/>
+                        <viewControllerLayoutGuide type="bottom" id="sIN-tk-PlV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cbf-FJ-kV5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="i2n-Uf-w7t">
+                                <rect key="frame" x="16" y="64" width="288" height="278"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="278" id="db6-tH-de1"/>
+                                </constraints>
+                                <string key="text">Your have successfully destroyed all known nuclear sites! The threatened ICBM, however, was successfully launched and San Francisco has been wiped off the face of the earth.</string>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i2n-Uf-w7t" firstAttribute="trailing" secondItem="cbf-FJ-kV5" secondAttribute="trailingMargin" id="Lh0-8l-5gp"/>
+                            <constraint firstItem="i2n-Uf-w7t" firstAttribute="leading" secondItem="cbf-FJ-kV5" secondAttribute="leadingMargin" id="VEF-1x-guP"/>
+                            <constraint firstItem="i2n-Uf-w7t" firstAttribute="top" secondItem="Vho-2z-nW6" secondAttribute="bottom" id="dBl-xc-bh9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GJx-yC-jrp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2n-Tj-J0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852.5" y="489.08450704225351"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mEm-Sg-nYp">
+            <objects>
+                <viewController id="riX-3H-xPT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="15e-Wh-RIR"/>
+                        <viewControllerLayoutGuide type="bottom" id="mw0-h8-o9l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hc0-cW-Mh8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="e3y-CI-zy9">
+                                <rect key="frame" x="16" y="64" width="288" height="278"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="278" id="vNh-Vb-QYS"/>
+                                </constraints>
+                                <string key="text">A bloody battle at the DMZ has left tens of thousands dead with an unclear resolution. The threatened ICBM was also sucessfully launched and San Francisco has been destroyed. Well done, bro.</string>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e3y-CI-zy9" firstAttribute="top" secondItem="15e-Wh-RIR" secondAttribute="bottom" id="ZJn-bq-2Fd"/>
+                            <constraint firstItem="e3y-CI-zy9" firstAttribute="trailing" secondItem="hc0-cW-Mh8" secondAttribute="trailingMargin" id="bxz-ai-aAD"/>
+                            <constraint firstItem="e3y-CI-zy9" firstAttribute="leading" secondItem="hc0-cW-Mh8" secondAttribute="leadingMargin" id="fns-DC-63Y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2BJ-Mt-AYU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nld-bJ-ou7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852.5" y="1285.5633802816901"/>
         </scene>
     </scenes>
 </document>
