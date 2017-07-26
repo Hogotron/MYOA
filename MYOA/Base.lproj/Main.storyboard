@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,34 +38,167 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrK-7d-bOd">
-                                <rect key="frame" x="16" y="421" width="291" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <state key="normal" title="Launch airstrikes against all known launching sites"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOb-gC-MYA">
-                                <rect key="frame" x="16" y="485" width="291" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOb-gC-MYA">
+                                <rect key="frame" x="16" y="485" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YMi-f3-XdI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Cyberattack the country's electrical grid"/>
+                                <connections>
+                                    <segue destination="2Ii-TR-qX3" kind="show" id="JB3-L1-1Tc"/>
+                                </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="sS6-8a-aVW">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="sS6-8a-aVW">
                                 <rect key="frame" x="16" y="84" width="288" height="302"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="302" id="Sbd-Ub-mYZ"/>
+                                </constraints>
                                 <string key="text">North Korea leader Kim Jong-Un has stated that he will be testing an inter-continental ballistic missile with a nuclear warhead by exploding it in the air over the eastern Pacific ocean.</string>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrK-7d-bOd">
+                                <rect key="frame" x="16" y="421" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Launch airstrikes against all known launching sites"/>
+                                <connections>
+                                    <segue destination="Ay4-up-G6H" kind="show" id="Ccb-55-zLy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="yOb-gC-MYA" secondAttribute="trailing" id="DUu-0I-hJ3"/>
+                            <constraint firstItem="4yV-u2-IJp" firstAttribute="top" secondItem="yOb-gC-MYA" secondAttribute="bottom" constant="53" id="GOg-rf-hpX"/>
+                            <constraint firstItem="sS6-8a-aVW" firstAttribute="leading" secondItem="yOb-gC-MYA" secondAttribute="leading" id="JBd-0w-IGj"/>
+                            <constraint firstItem="sS6-8a-aVW" firstAttribute="trailing" secondItem="O3t-P0-8vi" secondAttribute="trailingMargin" id="VH4-3k-J2H"/>
+                            <constraint firstItem="yOb-gC-MYA" firstAttribute="top" secondItem="jrK-7d-bOd" secondAttribute="bottom" constant="34" id="eFv-MD-hG8"/>
+                            <constraint firstItem="sS6-8a-aVW" firstAttribute="leading" secondItem="jrK-7d-bOd" secondAttribute="leading" id="flJ-aK-xg4"/>
+                            <constraint firstItem="yOb-gC-MYA" firstAttribute="trailing" secondItem="jrK-7d-bOd" secondAttribute="trailing" id="hm9-2O-Jbc"/>
+                            <constraint firstItem="sS6-8a-aVW" firstAttribute="top" secondItem="Hlx-p4-Bki" secondAttribute="bottom" constant="20" id="jtU-7y-wzH"/>
+                            <constraint firstItem="sS6-8a-aVW" firstAttribute="leading" secondItem="O3t-P0-8vi" secondAttribute="leadingMargin" id="tmm-wB-kD5"/>
+                            <constraint firstItem="jrK-7d-bOd" firstAttribute="top" secondItem="sS6-8a-aVW" secondAttribute="bottom" constant="35" id="uKN-wr-H46"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kr5-xx-ojw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dc4-bi-nyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-13.125" y="105.63380281690141"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vPS-4g-gzP">
+            <objects>
+                <viewController id="Ay4-up-G6H" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pa8-LQ-DTo"/>
+                        <viewControllerLayoutGuide type="bottom" id="gQC-gS-mJj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G3F-Am-zWV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VZ-SI-hqK">
+                                <rect key="frame" x="16" y="421" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Attempt an intercept with Patriot missiles"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxz-Yd-yyw">
+                                <rect key="frame" x="16" y="485" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wvy-sX-2cu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Nuke Pyongyang"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tKj-Af-f97">
+                                <rect key="frame" x="16" y="84" width="288" height="302"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="302" id="MD5-mH-Svd"/>
+                                </constraints>
+                                <string key="text">The North Korean leader's radar identified your incoming warplanes and has launched the ICBM with a declared target of San Francisco!</string>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tKj-Af-f97" firstAttribute="leading" secondItem="8VZ-SI-hqK" secondAttribute="leading" id="63O-Ce-iwf"/>
+                            <constraint firstItem="tKj-Af-f97" firstAttribute="leading" secondItem="G3F-Am-zWV" secondAttribute="leadingMargin" id="8l0-CB-OqL"/>
+                            <constraint firstItem="tKj-Af-f97" firstAttribute="leading" secondItem="nxz-Yd-yyw" secondAttribute="leading" id="9wB-OE-guZ"/>
+                            <constraint firstItem="nxz-Yd-yyw" firstAttribute="trailing" secondItem="8VZ-SI-hqK" secondAttribute="trailing" id="OYb-rF-llP"/>
+                            <constraint firstItem="8VZ-SI-hqK" firstAttribute="top" secondItem="tKj-Af-f97" secondAttribute="bottom" constant="35" id="bTx-Lk-yx7"/>
+                            <constraint firstItem="tKj-Af-f97" firstAttribute="trailing" secondItem="G3F-Am-zWV" secondAttribute="trailingMargin" id="ehK-qF-Mo0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nxz-Yd-yyw" secondAttribute="trailing" id="mye-Ux-mHy"/>
+                            <constraint firstItem="nxz-Yd-yyw" firstAttribute="top" secondItem="8VZ-SI-hqK" secondAttribute="bottom" constant="34" id="oP9-BT-zSg"/>
+                            <constraint firstItem="tKj-Af-f97" firstAttribute="top" secondItem="pa8-LQ-DTo" secondAttribute="bottom" constant="20" id="x9q-Ae-aQu"/>
+                            <constraint firstItem="gQC-gS-mJj" firstAttribute="top" secondItem="nxz-Yd-yyw" secondAttribute="bottom" constant="53" id="xpW-GB-Xc9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zLY-DG-JFG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6P-zz-1vm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="-252.46478873239437"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9GY-7h-sBO">
+            <objects>
+                <viewController id="2Ii-TR-qX3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eb5-7j-zVJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="4dE-cE-JsY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q2C-R0-TS5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKb-YA-YZ2">
+                                <rect key="frame" x="16" y="421" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Launch missile strikes at all known launching facilities"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylC-je-k2R">
+                                <rect key="frame" x="16" y="485" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JNl-qi-uJ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Order a full scale invasion from South Korea"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hui-fQ-M7F">
+                                <rect key="frame" x="16" y="84" width="288" height="302"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="302" id="bQT-jV-KS8"/>
+                                </constraints>
+                                <string key="text">Large swathes of the country are without power, but intelligence indicates mobile launch vehicles are still moving into position.</string>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hui-fQ-M7F" firstAttribute="leading" secondItem="jKb-YA-YZ2" secondAttribute="leading" id="0h5-Ff-BeZ"/>
+                            <constraint firstItem="4dE-cE-JsY" firstAttribute="top" secondItem="ylC-je-k2R" secondAttribute="bottom" constant="53" id="1j2-3Q-iFb"/>
+                            <constraint firstItem="hui-fQ-M7F" firstAttribute="leading" secondItem="Q2C-R0-TS5" secondAttribute="leadingMargin" id="2yq-Dt-rLr"/>
+                            <constraint firstItem="hui-fQ-M7F" firstAttribute="trailing" secondItem="Q2C-R0-TS5" secondAttribute="trailingMargin" id="HzJ-0X-WfF"/>
+                            <constraint firstItem="hui-fQ-M7F" firstAttribute="trailing" secondItem="ylC-je-k2R" secondAttribute="trailing" id="Qem-81-0Vp"/>
+                            <constraint firstItem="hui-fQ-M7F" firstAttribute="top" secondItem="eb5-7j-zVJ" secondAttribute="bottom" constant="20" id="ety-ed-Jdi"/>
+                            <constraint firstItem="hui-fQ-M7F" firstAttribute="leading" secondItem="ylC-je-k2R" secondAttribute="leading" id="ln4-UW-pDq"/>
+                            <constraint firstItem="jKb-YA-YZ2" firstAttribute="top" secondItem="hui-fQ-M7F" secondAttribute="bottom" constant="35" id="onA-Jc-3cU"/>
+                            <constraint firstItem="hui-fQ-M7F" firstAttribute="trailing" secondItem="jKb-YA-YZ2" secondAttribute="trailing" id="vpV-4t-9EK"/>
+                            <constraint firstItem="ylC-je-k2R" firstAttribute="top" secondItem="jKb-YA-YZ2" secondAttribute="bottom" constant="34" id="x24-IP-AhF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gMQ-hg-1zD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2q3-jh-WJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="490.14084507042253"/>
         </scene>
     </scenes>
 </document>
